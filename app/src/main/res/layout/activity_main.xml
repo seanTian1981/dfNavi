@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Navigation Button -->
+    <Button
+        android:id="@+id/btnNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:text="@string/start_navigation"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/start_navigation"
+        android:accessibilityHint="点击进入导航功能" />
+
+    <!-- Manage Locations Button -->
+    <Button
+        android:id="@+id/btnManageLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:text="@string/manage_locations"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/manage_locations"
+        android:accessibilityHint="点击进入位置管理功能" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/settings"
+        android:accessibilityHint="点击进入设置功能" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_footer"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:padding="8dp" />
+
+</LinearLayout>

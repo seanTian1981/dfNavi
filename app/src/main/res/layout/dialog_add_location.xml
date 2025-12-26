@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <!-- Location Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="位置名称"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:paddingBottom="8dp"
+        android:contentDescription="输入位置名称" />
+
+    <EditText
+        android:id="@+id/etLocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_hint_color"
+        android:hint="例如：图书馆"
+        android:inputType="text"
+        android:contentDescription="位置名称输入框" />
+
+    <!-- Category -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="位置类别"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:contentDescription="选择位置类别" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:contentDescription="位置类别选择器" />
+
+    <!-- Latitude -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="纬度"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:contentDescription="纬度坐标" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:text="0.000000"
+        android:textSize="16sp"
+        android:textColor="@color/accent_color"
+        android:contentDescription="当前纬度值" />
+
+    <!-- Longitude -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="经度"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:contentDescription="经度坐标" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:text="0.000000"
+        android:textSize="16sp"
+        android:textColor="@color/accent_color"
+        android:contentDescription="当前经度值" />
+
+    <!-- Use Current Location Button -->
+    <Button
+        android:id="@+id/btnUseCurrentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="使用当前位置"
+        android:textSize="14sp"
+        android:textColor="@color/text_color"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="使用当前位置"
+        android:accessibilityHint="点击获取当前GPS坐标" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="描述"
+        android:textSize="16sp"
+        android:textColor="@color/text_color"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:contentDescription="位置描述" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_hint_color"
+        android:hint="可选描述信息"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:contentDescription="位置描述输入框" />
+
+</LinearLayout>

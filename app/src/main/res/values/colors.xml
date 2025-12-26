@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- High contrast colors for accessibility -->
+    <color name="background_color">#000000</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="text_hint_color">#CCCCCC</color>
+    <color name="button_border_color">#FFFF00</color>
+    <color name="button_background">#000000</color>
+    <color name="edittext_background">#1A1A1A</color>
+    <color name="accent_color">#FFFF00</color>
+
+    <!-- Additional colors -->
+    <color name="divider_color">#FFFFFF</color>
+    <color name="selected_color">#FFFF00</color>
+    <color name="focused_color">#CCCC00</color>
+</resources>

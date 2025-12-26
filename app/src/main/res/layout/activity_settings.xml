@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:padding="16dp"
+            android:contentDescription="@string/settings" />
+
+        <!-- Step Length Setting -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/average_step_length"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="@string/average_step_length" />
+
+        <SeekBar
+            android:id="@+id/seekBarStepLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="设置平均步长，当前值请查看下方显示" />
+
+        <TextView
+            android:id="@+id/tvStepLengthValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.70 米"
+            android:textSize="16sp"
+            android:textColor="@color/accent_color"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Voice Speed Setting -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_speed"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="@string/voice_speed" />
+
+        <SeekBar
+            android:id="@+id/seekBarVoiceSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="设置语音速度，当前值请查看下方显示" />
+
+        <TextView
+            android:id="@+id/tvVoiceSpeedValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.8 倍"
+            android:textSize="16sp"
+            android:textColor="@color/accent_color"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Voice Volume Setting -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_volume"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="@string/voice_volume" />
+
+        <SeekBar
+            android:id="@+id/seekBarVoiceVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="设置语音音量，当前值请查看下方显示" />
+
+        <TextView
+            android:id="@+id/tvVoiceVolumeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="16sp"
+            android:textColor="@color/accent_color"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <!-- Accessibility Mode Setting -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accessibility_mode"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:contentDescription="@string/accessibility_mode" />
+
+            <Switch
+                android:id="@+id/switchAccessibilityMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:contentDescription="无障碍模式开关" />
+
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:text="@string/save_settings"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/save_settings"
+            android:accessibilityHint="保存当前设置" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btnResetDefaults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:text="@string/reset_defaults"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/reset_defaults"
+            android:accessibilityHint="恢复默认设置" />
+
+    </LinearLayout>
+
+</ScrollView>

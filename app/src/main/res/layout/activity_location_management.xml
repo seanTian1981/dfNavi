@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_locations"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:contentDescription="@string/manage_locations" />
+
+    <!-- Location List -->
+    <ListView
+        android:id="@+id/lvLocations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:divider="@color/text_color"
+        android:dividerHeight="1dp"
+        android:background="@color/background_color"
+        android:contentDescription="位置列表" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnAddLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="64dp"
+            android:text="@string/add_location"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/add_location"
+            android:accessibilityHint="添加新的校园位置" />
+
+        <Button
+            android:id="@+id/btnEditLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="64dp"
+            android:text="@string/edit_location"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/edit_location"
+            android:accessibilityHint="编辑选中的位置" />
+
+        <Button
+            android:id="@+id/btnDeleteLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="64dp"
+            android:text="@string/delete_location"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/delete_location"
+            android:accessibilityHint="删除选中的位置" />
+
+    </LinearLayout>
+
+</LinearLayout>
