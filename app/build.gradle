@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.heibeieast.campusnav'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.heibeieast.campusnav"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Google Play Services Location
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    // Google ML Kit (for future OCR)
+    implementation 'com.google.mlkit:ocr:16.0.0'
+
+    // Gson for JSON
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
