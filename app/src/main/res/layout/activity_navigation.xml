@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:padding="8dp"
+            android:contentDescription="@string/navigation" />
+
+        <!-- From Location Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_start_location"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="@string/select_start_location" />
+
+        <!-- From Location Spinner -->
+        <Spinner
+            android:id="@+id/spinnerFromLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:contentDescription="选择起点位置" />
+
+        <!-- To Location Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_destination"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:contentDescription="@string/select_destination" />
+
+        <!-- To Location Spinner -->
+        <Spinner
+            android:id="@+id/spinnerToLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_background"
+            android:padding="8dp"
+            android:contentDescription="选择终点位置" />
+
+        <!-- Start Navigation Button -->
+        <Button
+            android:id="@+id/btnStartNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:text="@string/start_navigation"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="开始导航"
+            android:accessibilityHint="点击开始导航到目标位置" />
+
+        <!-- Navigation Info Section -->
+        <LinearLayout
+            android:id="@+id/navigationInfoSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:visibility="gone">
+
+            <!-- Current Location -->
+            <TextView
+                android:id="@+id/tvCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/current_location"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:padding="8dp"
+                android:contentDescription="@string/current_location" />
+
+            <!-- Distance -->
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_color"
+                android:padding="8dp"
+                android:contentDescription="@string/distance" />
+
+            <!-- Remaining Steps -->
+            <TextView
+                android:id="@+id/tvRemainingSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining_steps"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent_color"
+                android:padding="8dp"
+                android:contentDescription="@string/remaining_steps" />
+
+            <!-- Instruction -->
+            <TextView
+                android:id="@+id/tvInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/navigation_instruction"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/button_border_color"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/navigation_instruction" />
+        </LinearLayout>
+
+        <!-- Stop Navigation Button -->
+        <Button
+            android:id="@+id/btnStopNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:text="@string/stop_navigation"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp"
+            android:contentDescription="停止导航"
+            android:accessibilityHint="点击停止当前导航" />
+
+    </LinearLayout>
+
+</ScrollView>

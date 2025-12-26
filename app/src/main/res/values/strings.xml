@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">校园语音导航</string>
+    <string name="app_version">1.0</string>
+    <string name="app_footer">黑龙江东方学院 © 2024</string>
+
+    <!-- Main Activity -->
+    <string name="start_navigation">开始导航</string>
+    <string name="manage_locations">管理位置</string>
+    <string name="settings">设置</string>
+
+    <!-- Navigation Activity -->
+    <string name="navigation">导航</string>
+    <string name="select_start_location">选择起点</string>
+    <string name="select_destination">选择终点</string>
+    <string name="current_location">当前位置: --</string>
+    <string name="distance">距离: --</string>
+    <string name="remaining_steps">剩余步数: --</string>
+    <string name="navigation_instruction">请选择起点和终点开始导航</string>
+    <string name="stop_navigation">停止导航</string>
+
+    <!-- Location Management Activity -->
+    <string name="add_location">添加</string>
+    <string name="edit_location">编辑</string>
+    <string name="delete_location">删除</string>
+
+    <!-- Settings Activity -->
+    <string name="average_step_length">平均步长</string>
+    <string name="voice_speed">语音速度</string>
+    <string name="voice_volume">语音音量</string>
+    <string name="accessibility_mode">无障碍模式</string>
+    <string name="save_settings">保存设置</string>
+    <string name="reset_defaults">恢复默认</string>
+
+    <!-- Messages -->
+    <string name="select_both_locations">请选择起点和终点</string>
+    <string name="same_location_error">起点和终点不能相同</string>
+    <string name="cannot_plan_path">无法规划路径</string>
+    <string name="cannot_track_location">无法启动位置跟踪</string>
+    <string name="arrived">已到达</string>
+    <string name="location_name_required">请输入位置名称</string>
+    <string name="location_coordinates_required">请设置位置坐标</string>
+    <string name="coordinate_format_error">坐标格式错误</string>
+    <string name="location_added">位置已添加</string>
+    <string name="location_updated">位置已更新</string>
+    <string name="location_deleted">位置已删除</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="settings_reset">已恢复默认设置</string>
+    <string name="location_permission_required">需要位置权限</string>
+    <string name="current_location_obtained">已获取当前位置</string>
+    <string name="cannot_get_current_location">无法获取当前位置</string>
+    <string name="delete_location_confirmation">确定要删除位置 \"%s\" 吗？</string>
+
+    <!-- Categories -->
+    <string name="category_building">建筑</string>
+    <string name="category_library">图书馆</string>
+    <string name="category_canteen">食堂</string>
+    <string name="category_gym">体育馆</string>
+    <string name="category_gate">校门</string>
+    <string name="category_other">其他</string>
+</resources>
