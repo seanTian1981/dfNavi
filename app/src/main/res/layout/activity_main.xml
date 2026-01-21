@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -37,7 +38,7 @@
         android:background="@drawable/button_background"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/start_navigation"
-        android:accessibilityHint="点击进入导航功能" />
+        tools:accessibilityHint="点击进入导航功能" />
 
     <!-- Manage Locations Button -->
     <Button
@@ -51,7 +52,7 @@
         android:background="@drawable/button_background"
         android:layout_marginBottom="16dp"
         android:contentDescription="@string/manage_locations"
-        android:accessibilityHint="点击进入位置管理功能" />
+        tools:accessibilityHint="点击进入位置管理功能" />
 
     <!-- Settings Button -->
     <Button
@@ -64,7 +65,7 @@
         android:textColor="@color/text_color"
         android:background="@drawable/button_background"
         android:contentDescription="@string/settings"
-        android:accessibilityHint="点击进入设置功能" />
+        tools:accessibilityHint="点击进入设置功能" />
 
     <!-- Spacer -->
     <View
